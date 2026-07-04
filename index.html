@@ -22,30 +22,79 @@
     <style>
         body {
             background: linear-gradient(15deg, #2cb88e 0%, #641459 70%);
-            width: 100%;
+            width: 110%;
             height: 100%;
+            background-repeat: no-repeat;
+        }
+        *:not(html, body):hover {
+            transform: rotate(0.3deg);
+            margin-left: -3px;
+        }
+        *:not(html, body) {
+            width: 200px;
+            overflow-x: scroll;
+        }
+        p, h1, h2, h3, h4, h5, h6, a {
             color: #6d2964;
+            animation: buttfart 1s infinite;
+            white-space: nowrap;
         }
-        *:hover {
-            margin-top: 10px;
-            transform: rotate(1deg);
+        @keyframes buttfart {
+            0% {color: #f8aaee;}
+            50% {color: #4b84ff;}
+            100% {color: #3eaa78;}
         }
+        
+        img {
+            position: relative;
+            width: 300px;
+            height: 100px;
+            object-fit: fill;
+        }
+
+        /* width */ 
+        ::-webkit-scrollbar { 
+            scrollbar-width: thin;
+            background: transparent; 
+        } 
+
+        /* Track */ 
+        ::-webkit-scrollbar-track { 
+            background: transparent; 
+        } 
+
+        /* Handle */ 
+        ::-webkit-scrollbar-thumb { 
+            background: wheat; 
+            border-radius: 50%; 
+        } 
+
+        /* Handle on hover */ 
+        ::-webkit-scrollbar-thumb:hover { 
+            background: wheat; 
+        }
+
     </style>
 
     <body>
         <h1>The BEst Website ever</h1>
+        brought to you by the creators of <a href="https://yapper.shop/" target="_blank">https://yapper.shop/</a>
+        <img src="./images/4.png">
         <div>
             <h2>WaveDev</h2>
             <a href="https://github.com/wavedevgit" target="_blank">Visit Example Website</a>
             <a href="https://github.com/wavedevgit" target="_blank">Visit Example Website</a>
+            <img src="./images/3.png">
         </div>
         <div>
             <h2>AUTOMOTIVO MANGOS 67  67  67  67  67  67  67  67  67  67  67  67  67  67  67 </h2>
             <a href="https://kalze.dev" target="_blank">kalze.dev</a>
+            <img src="./images/1.png">
         </div>
         <div>
             <h2>hoax</h2>
             <a href="https://traox.xyz" target="_blank">hoax.dev</a>
+            <img src="./images/2.png">
         </div>
     </body>
 
